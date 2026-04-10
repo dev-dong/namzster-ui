@@ -38,7 +38,7 @@ export default function Login() {
                 setStatus({
                     type: "success", message: "로그인 성공!"
                 })
-                window.location.replace(window.location.origin + data.address)
+                window.location.replace(window.location.origin + data.redirectUrl)
             } else {
                 setForm((prev) => ({
                     ...prev, password: ""
